@@ -1,0 +1,183 @@
+<!--Student ID: 17485602 
+	Student Name: Joanne Reilly
+	Date: 25/04/2018
+	Document has been validated.-->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Membership - East Coast Surf Club</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Membership page for East Coast Surf Club">
+	<meta name="keywords" content="Surfing, Dublin, Waves, Club">
+	<meta name="author" content="Joanne Reilly">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href ="./Images/waveicon.png" rel="icon">
+	<link href="./CSS/assignment2.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+</head>
+<body>
+	<img src="./Images/surfing.png" class="logo" alt="logo" id="logo" style="padding-top: 0px;">
+	<a href="#logo"><img src="./Images/back-to-top.png" class="top" alt="top"></a>
+	
+	<ul class="topbar">
+		<li class="links"><a href="./Blog.html">Blog</a></li>
+		<li class="links"><a class="active">Membership</a></li>
+		<li class="links"><a href="./Aboutus.html">About us</a></li>
+		<li class="links"><a href="./index.html">Welcome</a></li>
+	</ul>
+	<div class="bar"></div>
+	
+	<div class="container6">
+		<h1 class="form">Membership.</h1>
+		<h2 class="form">With a ECSC membership you can go on trips, recieve lessons, have access to equipment and participate in competitions.</h2>
+	</div>
+	
+	<div class="container5">
+	
+		<form id="membershipform" action="Join_post.php" method="post" onsubmit="return validateForm()" style="padding: 0px 50px 0px 50px; width: 500px; height: 650px; overflow: auto; margin: 0 auto; font-family: sans-serif; background-color: #fbfbfb; color: #333;">
+			<h3>Join Now</h3>
+			<h4>Personal Information</h4>
+			First name:<br>
+			<input type="text" name="firstname"><br>
+			Last name:<br>
+			<input type="text" name="lastname"><br>
+			Birthday:<br>
+			<input type="date" name="birthday"><br>
+			Address Line 1:<br>
+			<input type="text" name="addressline1"><br>
+			Address Line 2:<br>
+			<input type="text" name="addressline2"><br>
+			Town/City Zone<br>
+			<input type="text" name="zone"><br>
+			County<br>
+			<input type="text" name="county"><br>
+			Email Address:<br>
+			<input type="text" name="email"><br>
+			Phone Number:<br>
+			<input type="text" name="phone"><br>
+			
+			<h4>Terms of Membership</h4>
+			<input type="checkbox" name="T&C1" value="agree" checked>I agree to the <u>ECSC; Terms</u> and the <u>ESCS Constitutionon</u>.<br>
+			<input type="checkbox" name="T&C2" value="consent" checked>I agree to be bound by the Code of Ethics and Good Practice for Children's Sport and to the ECSC's Child Protection Policy.<br>
+			<br><br>
+			<input type="submit" value="Submit">
+		</form>
+		
+		<script>
+			function validateForm() {
+				var x = document.forms["membershipform"]["firstname"].value;
+				
+				//first name must be filled
+				if (x == "") {
+					alert("Firstname must be filled out");
+					return false;
+				}
+				
+				//first name must be < 9
+				var n = x.length;
+				if (n > 8)
+				{
+					alert("Name must be no more than 8 characters");
+					return false;
+				}
+				
+				//last name must be filled
+				//last name must be < 9
+				var x = document.forms["membershipform"]["lastname"].value;
+				if (x == "") {
+					alert("Name must be filled out");
+					return false;
+				}
+				var n = x.length;
+				if (n > 8)
+				{
+					alert("Name must be no more than 8 characters");
+					return false;
+				}
+				
+				//birthday must be less than this date
+				//birthday must be more than this date
+				//addresses must be filled
+				//addresses must be < 9
+				var x = document.forms["membershipform"]["addressline1"].value;
+				if (x == "") {
+					alert("Address line 1 must be filled out");
+					return false;
+				}
+				var n = x.length;
+				if (n > 15)
+				{
+					alert("Address line 1 must be no more than 15 characters");
+					return false;
+				}
+				var x = document.forms["membershipform"]["addressline2"].value;
+				if (x == "") {
+					alert("Address line 2 must be filled out");
+					return false;
+				}
+				var n = x.length;
+				if (n > 15)
+				{
+					alert("Address line 2 must be no more than 15 characters");
+					return false;
+				}
+				var x = document.forms["membershipform"]["zone"].value;
+				if (x == "") {
+					alert("Zone must be filled out");
+					return false;
+				}
+				var n = x.length;
+				if (n > 8)
+				{
+					alert("Zone must be no more than 8 characters");
+					return false;
+				}
+				var x = document.forms["membershipform"]["county"].value;
+				if (x == "") {
+					alert("County must be filled out");
+					return false;
+				}
+				var n = x.length;
+				if (n > 15)
+				{
+					alert("County must be no more than 15 characters");
+					return false;
+				}
+				//email address @
+				//email address length
+				var x = document.forms["membershipform"]["email"].value;
+				if (x == "") {
+					alert("Email must be filled out");
+					return false;
+				}
+				var n = x.length;
+				if (n > 15)
+				{
+					alert("Email must be no more than 15 characters");
+					return false;
+				}
+				
+				//phone number
+				var x = document.forms["membershipform"]["phone"].value;
+				if (x == "") {
+					alert("Phone number must be filled out");
+					return false;
+				}
+				var n = x.length;
+				if (n > 10)
+				{
+					alert("Phone number must be no more than 10 characters");
+					return false;
+				}
+			}
+		
+		</script>
+		
+	</div>
+	
+	<footer>&copy; 2017 ECSC&trade;. All rights reserved.</footer>
+</body>
+</html>

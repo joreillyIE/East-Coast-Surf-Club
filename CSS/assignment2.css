@@ -1,0 +1,623 @@
+/* assignment2/css/assignment2.css JR 2018
+   assignment2/index.html 
+   assignment2/Blog.html
+   assignment2/Join.html
+   assignment2/Aboutus.html 
+   assignment2/Join_post.php
+   assignment2/Membership.html
+   
+   */
+   
+	/*
+	Body section styles the website's background color, image, and fixes it in place.
+   */
+body {
+	background-image: url('../Images/sababackground.png');
+	background-color: #111;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+	/*
+	Footer section styles footer below each webpage to have a white background, padding,
+	margin, small text in sans-serif font.
+	*/
+footer {
+	background-color: #f7f7f7;
+	padding: 20px;
+	font-family: sans-serif;
+	font-size: 0.5em;
+	color: #333;
+	margin-top: 20px;
+}
+	
+	/*
+	welcome class in h1 tags styles the first header in the welcome section on the index page.
+	*/
+h1.welcome {
+	margin: 100px 0px 0px 200px;
+	width: 380px;
+	padding: 10px 10px 5px 10px;
+	color: #111;
+	background-color: #fefefa;
+	font-size: 40px;
+	font-family: 'Crete Round', serif;
+}
+
+	/*
+	welcome class in p tags styles the paragraphs in the welcome section on the index page.
+	*/
+p.welcome {
+	margin: 0px 0px 0px 200px;
+	width: 600px;
+	padding: 5px 10px 10px 10px;
+	color: #111;
+	background-color: #fefefa;
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+	/*
+	slogan class in p tags styles the slogan in the welcome section on the index page.
+	*/
+p.slogan {
+	margin: 0px 0px 0px 200px;
+	width: 600px;
+	padding: 5px 5px 5px 15px;
+	color: #111;
+	background-color: #fefefa;
+	font-size: 25px;
+	font-family: 'Satisfy', cursive;
+}
+
+	/*
+	loyalty class gives anything in the loyalty section a z-index of 100 so that it stays above
+	container. It gives absolute positioning to the text, a white color and sans-serif font. 
+	It also places the text 300px from the left.
+	*/
+.loyalty {
+	z-index: 100;
+	position: absolute;
+	color: white;
+	font-family: sans-serif;
+	margin-left: 300px;
+}
+	/*
+	gives h1 tag in loyalty section normal font weight, very large font size and margin 30px.
+	*/
+h1.loyalty {
+	font-weight: normal;
+	font-size: xx-large;
+	margin-top: 30px;
+}
+
+	/*
+	gives p tag in loyalty section lighter font weight, large size and 80px margin from top.
+	*/
+p.loyalty {
+	font-weight: lighter;
+	font-size: large;
+	margin-top: 80px;
+}
+
+	/*
+	about_us class gives text in the about_us section a color, sans-serif font and a 50px margin from the left.
+	*/
+.about_us {
+	color: #0f0f0f;
+	font-family: sans-serif;
+	margin-left: 50px;
+}
+
+	/*
+	checkoutitems class gives table in class a color, sans-serif font and a 50px margin from the left.
+	*/
+.checkoutitems {
+	color: #0f0f0f;
+	font-family: sans-serif;
+	margin-left: 50px;
+}
+
+	/*
+	about_us class in h1 tag gives first heading in about_us section a serif font family, large size and 30px padding on top.
+	*/
+h1.about_us {
+	font-family: 'Crete Round', serif;
+	font-size: 40px;
+	padding-top: 30px;
+}
+
+	/*
+	about_us class for h2 tag gives second heading in about_us section a serif font family, medium size and normal font weight.
+	*/
+h2.about_us {
+	font-family: 'Crete Round', serif;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+	/*
+	about_us class for p tag gives paragraph in about_us section a margin 50px from the right side of page.
+	*/
+p.about_us {
+	margin-right: 50px;
+}
+
+	/*
+	about_us class for caption tag gives caption in about_us section a serif font, small size, normal weight, no margin, a left alignment
+	and underlines text.
+	*/
+caption.about_us {
+	font-family: 'Crete Round', serif;
+	font-size: 20px;
+	font-weight: normal;
+	margin-left: 0px;
+	text-align: left;
+	text-decoration: underline;
+}
+
+	/*
+	gives header and data table cells a right-sided padding of 10px and text alignment of left.
+	*/
+th, td {
+	padding-right: 10px;
+	text-align: left;
+}
+
+	/*
+	gives data table cells a top verticle alignment.
+	*/
+td {
+	vertical-align: top;
+}
+
+	/*
+	gives header table cells an oblique font style, bold weight with no capital letters it the text.
+	*/
+th {
+	font-style: oblique;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+	/*
+	gives the first data cell in each row in a table in the about_us section a width of 10px.
+	*/
+table.about_us td:nth-child(1) {
+	width: 10px;
+}
+
+	/*
+	gives the first data cell in each row in a table in the checkout section a width of 20px.
+	*/
+table.checkoutitems td:nth-child(1) {
+	width: 20px;
+}
+
+	/*
+	gives the second data cell in each row in a table in the about_us section a width of 240px.
+	*/
+table.about_us td:nth-child(2) {
+	width: 240px;
+}
+
+   /*
+	gives the second data cell in each row in a table in the checkout section a width of 480px.
+	*/
+table.checkoutitems td:nth-child(2) {
+	width: 480px;
+}
+
+	/*
+	gives the third data cell in each row in a table in the about_us section a width of 50px.
+	*/
+table.about_us td:nth-child(3) {
+	width: 50px;
+}
+
+	/*
+	gives the third data cell in each row in a table in the checkout section a width of 100px.
+	*/
+table.checkoutitems td:nth-child(3) {
+	width: 100px;
+}
+
+	/*
+	gives the fourth data cell in each row in a table in the checkout section a center alignment.
+	*/
+table.checkoutitems td:nth-child(4) {
+	text-align: center;
+}
+
+	/*
+	about us class for the h1 tag gives the first heading in the about us section a width of 170px, padding, margin, background color,
+	color, size and sets the font family to serif.
+	*/
+h1.aboutus {
+	width: 170px;
+	padding: 0px 10px 0px 10px;
+	margin: 60px 0px 0px 100px;
+	background-color: #111;
+	color: #fefefa;
+	font-size: 40px;
+	font-family: 'Crete Round', serif;
+}
+
+	/*
+	about us class for the h2 tag gives the second heading in the about us section a width of 800px, padding, margin, background color,
+	color, size and sets the font family to serif.
+	*/
+h2.aboutus {
+	width: 800px;
+	padding: 10px 10px 5px 10px;
+	margin: 120px 0px 0px 100px;
+	background-color: #111;
+	color: #fefefa;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: 'Crete Round', serif;
+}
+
+	/*
+	about us class for the p tag gives paragraph in the about us section a width of 800px, padding, margin, background color,
+	color and sets the font family to sans-serif.
+	*/
+p.aboutus {
+	width: 800px;
+	padding: 10px 10px 10px 10px;
+	margin: 195px 0px 0px 100px;
+	background-color: #111;
+	color: #fefefa;
+	font-family: sans-serif;
+}
+
+	/*
+	form class for the h1 tag gives the first heading a form padding, size and sets the font family to serif.
+	*/
+h1.form {
+	font-family: 'Crete Round', serif;
+	font-size: 30px;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+	/*
+	cartsum class for the h1 tag gives the first heading in the cart summary a serif font family and 30px size.
+	*/
+h1.cartsum {
+	font-family: 'Crete Round', serif;
+	font-size: 30px;
+}
+
+	/*
+	form class for the h2 tag gives the second heading in a form a serif font family, 20px size, left padding, top
+	margin and normal font weight.
+	*/
+h2.form {
+	font-family: 'Crete Round', serif;
+	font-size: 20px;
+	padding-left: 30px;
+	margin-top: -15px;
+	font-weight: normal;
+}
+
+	/*
+	button1 class gives text a transparent background color, border, color, padding, alignment, transforms the text, gives space,
+	a sans-serif font, and other styles.
+	*/
+.button1 {
+	background-color: transparent;
+	border: 1px solid #18486f;
+	border-radius: 5px;
+	color: #ffffff;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: 'Lato', sans-serif;
+	display: inline-block;
+	font-size: 16px;
+	margin: 10px 200px;
+	cursor: pointer;
+}
+
+/*
+	button2 class gives text a transparent background color, border, color, padding, alignment, transforms the text, gives space,
+	a sans-serif font, and other styles.
+	*/
+.button2 {
+	background-color: #75c0fd;
+	border: none;
+	border-radius: 5px;
+	color: #0f0f0f;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: 'Lato', sans-serif;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	z-index: 1000;
+	position: absolute;
+	cursor: pointer;
+	margin-top: 120px;
+}
+
+.button3 {
+	background-color: #75c0fd;
+	border: none;
+	border-radius: 5px;
+	color: #0f0f0f;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: 'Lato', sans-serif;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.buttonM {
+	background-color: #75c0fd;
+	border: none;
+	border-radius: 5px;
+	color: #0f0f0f;
+	padding: 10px 150px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: 'Lato', sans-serif;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	z-index: 1000;
+	/*position: absolute;*/
+	cursor: pointer;
+	/*margin-top: 50px;*/
+}
+
+#joinM {
+	margin-left: 50px;
+}
+
+#join {
+	margin-left: 300px;
+}
+
+#membership {
+	margin-left: 500px;
+}
+
+
+ul.topbar {
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: 'Lato', sans-serif;
+}
+
+li.links {
+	float: right;
+	padding: 40px 20px 0px 0px;
+}
+
+li.links a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+}
+
+li.links a:hover {
+	background-color: #18486f;
+}
+
+.active {
+    background-color: #18486f;
+}
+
+li.links a:visited {
+	color: #fff;
+}
+
+li.links a:active {
+	color: #fff;
+	background-color: #18486f;
+}
+
+.bar {
+	position: relative;
+	z-index: -1;
+	height: 130px;
+	background-color: #333;
+	opacity: 0.7;
+	border-top-width: 5px;
+	border-top-color: #18486f;
+	border-top-style: solid;
+}
+
+.container1 {
+	position: relative;
+	height: 200px;
+	background-color: #1A1819;
+	margin-top: 260px;
+}
+
+.container2 {
+	position: relative;
+	height: 500px;
+	background-color: #fefefa;
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+.container3 {
+	height: 333px;
+}
+
+
+.container4 {
+	position: relative;
+	height: 620px;
+	background-color: #333;
+	background-image: url('../Images/aboutus.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container5 {
+	position: relative;
+	background-color: #fefefa;
+	padding: 50px;
+	margin-top: 20px;
+}
+
+.container6 {
+	margin-top: 70px;
+	background-color: #333;
+	color: white;
+	padding-bottom: 20px;
+}
+
+.container7 {
+	position: relative;
+	background-color: #fefefa;
+	padding-left: 50px;
+	margin-top: 20px;
+	height: 932px;
+}
+
+.container8 {
+	position: relative;
+	background-color: #fefefa;
+	height: 500px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.container10 {
+	height: 450px;
+}
+
+.cartdetails {
+	background-color: #FF7500;
+	padding: 20px;
+	border-radius: 15px 50px;
+	margin-bottom: 20px;
+}
+
+.aboutus {
+	position: absolute;
+}
+
+.logo {
+	float: left;
+	width: 200px;
+	padding-left: 10px;
+}
+
+.top {
+	position: fixed;
+	width: 100px;
+	bottom: 0;
+	right: 0;
+	z-index: 2000;
+	cursor: pointer;
+}
+
+.cart {
+	position: fixed;
+	width: 111px;
+	bottom: 0;
+	left: 0;
+	z-index: 2000;
+	cursor: pointer;
+}
+
+a:link#register,
+a:visited#register,
+a:hover#register {
+   color: #18486f;
+}
+
+a:link#login,
+a:visited#login,
+a:hover#login {
+   color: #18486f;
+}
+
+.surf {
+	float: left;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+input[type=text], input[type=date], input[type=password], input[type=submit] {
+    width: 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	border: 3px solid #ccc;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none;
+}
+
+input[type=number] {
+	width: 60px;
+}
+
+input[type=date]:focus {
+    border: 3px solid #555;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=password]:focus {
+    border: 3px solid #555;
+}
+
+input[type=submit] {
+    background-color: #18486f;
+	width: 360px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: 5px;
+}
+
+h1.blog {
+	font-family: 'Crete Round', serif;
+	font-size: 40px;
+	padding-top: 30px;
+	padding-left: 60px;
+}
+
+h2.blog {
+	font-family: 'Crete Round', serif;
+	font-size: 30px;
+	font-weight: normal;
+}
+p.blog {
+	font-family: sans-serif;
+	margin-right: 50px;
+}
